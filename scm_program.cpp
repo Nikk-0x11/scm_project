@@ -43,3 +43,37 @@ void arr::particular(int b[], int &n, int size)
     }
 }
 
+// To delete an element either whose value is given or whose position is given 
+void arr::deleteavalue(int b[], int &n, int size)
+{
+    int s;
+    cout<<"enter the no you want to delete: ";
+    int no;
+    cin>>no;
+    for(int i=0;i<n;i++)
+    {
+      if(b[i]==no)
+      {
+        s=i;
+          break;
+      }
+    }
+    for(int i=s;i<n;i++)
+    {
+      b[i]=b[i+1];
+    }
+    n=n-1;
+}
+void arr::deleteatpos(int b[],int &n,int size)
+{
+    int s;
+    cout<<"enter the position at which you want to delete: ";
+    int pos;
+    cin>>pos;
+    for(int i=pos;i<=n;i++)
+        {
+            b[i]=b[i+1];
+        }
+        n=n-1;
+}
+
