@@ -76,4 +76,24 @@ void arr::deleteatpos(int b[],int &n,int size)
         }
         n=n-1;
 }
-
+void arr::search(int b[], int &n, int size)
+{
+    int item;
+    cout<<"enter the item to be searched: ";
+    cin>>item;
+    int i;
+    int flag=0,loc=0;
+    for(i=0;i<=n;i++)
+    {
+        if(b[i]==item)
+        {
+        flag=1;
+        loc=i;
+        break;
+        }
+    }
+    if(flag==1)
+        cout<<" element found at index: "<< loc << endl;
+    else
+        cout<<"not found";
+}
