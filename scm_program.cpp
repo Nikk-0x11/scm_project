@@ -43,7 +43,7 @@ void arr::particular(int b[], int &n, int size)
     }
 }
 
-// To delete an element either whose value is given or whose position is given
+// To delete an element either whose value or position is given
 void arr::deleteavalue(int b[], int &n, int size)
 {
     int s;
